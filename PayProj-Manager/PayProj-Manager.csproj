@@ -116,7 +116,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="GeneratePayslip.aspx" />
+    <Content Include="ManagerEmployees.aspx" />
+    <Content Include="ManagerMasterPage.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="ManagerMessageCompose.aspx" />
+    <Content Include="ManagerMessageOutbox.aspx" />
+    <Content Include="ManagerMessages.aspx" />
+    <Content Include="ManagerWelcome.aspx" />
+    <Content Include="Payslips.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -174,6 +182,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BusinessAccessLayer.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,8 +197,64 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GeneratePayslip.aspx.cs">
+      <DependentUpon>GeneratePayslip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneratePayslip.aspx.designer.cs">
+      <DependentUpon>GeneratePayslip.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerEmployees.aspx.cs">
+      <DependentUpon>ManagerEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerEmployees.aspx.designer.cs">
+      <DependentUpon>ManagerEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMasterPage.Master.cs">
+      <DependentUpon>ManagerMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerMasterPage.Master.designer.cs">
+      <DependentUpon>ManagerMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMessageCompose.aspx.cs">
+      <DependentUpon>ManagerMessageCompose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerMessageCompose.aspx.designer.cs">
+      <DependentUpon>ManagerMessageCompose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMessageOutbox.aspx.cs">
+      <DependentUpon>ManagerMessageOutbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerMessageOutbox.aspx.designer.cs">
+      <DependentUpon>ManagerMessageOutbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMessages.aspx.cs">
+      <DependentUpon>ManagerMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerMessages.aspx.designer.cs">
+      <DependentUpon>ManagerMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerWelcome.aspx.cs">
+      <DependentUpon>ManagerWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerWelcome.aspx.designer.cs">
+      <DependentUpon>ManagerWelcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payslips.aspx.cs">
+      <DependentUpon>Payslips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payslips.aspx.designer.cs">
+      <DependentUpon>Payslips.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -201,12 +266,14 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
